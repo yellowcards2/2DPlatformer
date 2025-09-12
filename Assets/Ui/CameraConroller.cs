@@ -7,7 +7,7 @@ public class CameraConroller : MonoBehaviour
     private Vector3 _position;
     private float _cameraVisibleValue = -7f;
 
-    private void Awake()
+    private void Start()
     {
         if (!_player)
         {

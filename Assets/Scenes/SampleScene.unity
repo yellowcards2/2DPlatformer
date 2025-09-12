@@ -3562,6 +3562,7 @@ GameObject:
   - component: {fileID: 692139708}
   - component: {fileID: 692139716}
   - component: {fileID: 692139717}
+  - component: {fileID: 692139718}
   m_Layer: 0
   m_Name: First Patroller
   m_TagString: Enemy
@@ -3579,7 +3580,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 20e77e4732a82eb4abc1e88eb3e0a297, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -3728,6 +3729,19 @@ MonoBehaviour:
   _waypoints:
   - {fileID: 198604441}
   - {fileID: 466162177}
+--- !u!114 &692139718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692139705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c89ccae0eec370459b0f799793abd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transform: {fileID: 0}
 --- !u!1 &1055521848
 GameObject:
   m_ObjectHideFlags: 0
@@ -4037,6 +4051,7 @@ GameObject:
   - component: {fileID: 1233505178}
   - component: {fileID: 1233505176}
   - component: {fileID: 1233505175}
+  - component: {fileID: 1233505181}
   m_Layer: 0
   m_Name: Second Patroller
   m_TagString: Enemy
@@ -4097,7 +4112,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 20e77e4732a82eb4abc1e88eb3e0a297, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -4203,6 +4218,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1233505181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233505174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c89ccae0eec370459b0f799793abd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transform: {fileID: 0}
 --- !u!1 &1318468106
 GameObject:
   m_ObjectHideFlags: 0
@@ -6191,7 +6219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c89ccae0eec370459b0f799793abd5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sprite: {fileID: 1822459012}
+  _transform: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

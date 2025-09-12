@@ -4,6 +4,7 @@ public class Flipper : MonoBehaviour
 {
     [SerializeField] private Transform _transform;
 
+    private bool _facingRight = true;
     private const float RightSide = 0f;
     private const float LeftSide = 180f;
 
