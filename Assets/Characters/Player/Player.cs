@@ -21,7 +21,6 @@ public class Player : MonoBehaviour
         _fllipper = GetComponent<Flipper>();
     }
 
-
     private void Update()
     {
         Direction = Input.GetAxisRaw(Horizontal);

@@ -4,7 +4,7 @@ public class EnemyPatroller : MonoBehaviour
 {
     [SerializeField] private float _speed = 2f;
     [SerializeField] private Transform[] _waypoints;
-
+    
     private int _index;
     private float _distanceValue = 0.2f;
 
