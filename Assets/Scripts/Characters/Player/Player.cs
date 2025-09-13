@@ -1,3 +1,4 @@
+using System;
 using UnityEditor.Tilemaps;
 using UnityEngine;
 
@@ -11,6 +12,11 @@ public class Player : MonoBehaviour
     private Mover _mover;
     private GroundDetector _groundDetector;
     private Flipper _fllipper;
+    private int _coins;
+
+
+    public delegate void CoinPickedDelegate(int coins);
+    public event CoinPickedDelegate onCoinPicked;
 
     public float Direction { get; private set; }
 
@@ -27,7 +33,7 @@ public class Player : MonoBehaviour
 
         _mover.Move(Direction);
 
-        if (Input.GetKeyDown(KeyCode.Space) && _groundDetector.Check())
+        if (Input.GetKeyDown(KeyCode.Space) && _groundDetector.IsGrounded)
         {
             _mover.Jump();
         }
@@ -42,5 +48,13 @@ public class Player : MonoBehaviour
         {
             _fllipper.Flip(Direction);
         }
+    }
+
+    public void InrementCoin()
+    {
+        _coins++;
+
+        onCoinPicked?.Invoke(_coins);
+        
     }
 }
