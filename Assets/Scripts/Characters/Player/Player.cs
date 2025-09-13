@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     private Mover _mover;
     private GroundDetector _groundDetector;
     private Flipper _fllipper;
-    private int _coins;
+    private int _coin;
 
 
     public delegate void CoinPickedDelegate(int coins);
@@ -52,9 +52,9 @@ public class Player : MonoBehaviour
 
     public void InrementCoin()
     {
-        _coins++;
+        _coin++;
 
-        onCoinPicked?.Invoke(_coins);
+        onCoinPicked?.Invoke(_coin);
         
     }
 }
