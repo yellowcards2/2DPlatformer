@@ -16,11 +16,12 @@ public class Mover : MonoBehaviour
 
     public void Jump()
     {
+        _rigidbody.linearVelocity = new Vector2(_rigidbody.linearVelocity.x, 0);
         _rigidbody.AddForce(new Vector2(0, _jumpForce), ForceMode2D.Impulse);
     }
 
     public void Move(float direction)
     {
-        _rigidbody.linearVelocity = new Vector2(direction * _speed, _rigidbody.linearVelocityY);
+        _rigidbody.linearVelocity = new Vector2(_speed * direction , _rigidbody.linearVelocityY);
     }
 }
